@@ -1,2 +1,29 @@
 @import "./base/reset";
 @import "./base/variables";
+@import "./base/typography";
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 500;
+}
+
+body {
+  background-color: $stone-100;
+}
+
+main {
+  background-color: $white;
+  margin: 10% 20%;
+  border-radius: 36px;
+  border: none;
+}
+
+.image-container {
+  padding: 40px;
+}
+
+img {
+  width: 100%;
+  border-radius: 16px;
+}
