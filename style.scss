@@ -14,7 +14,7 @@ body {
 
 main {
   background-color: $white;
-  margin: 10% 20%;
+  margin: 8% 16%;
   border-radius: 36px;
   border: none;
 }
@@ -26,4 +26,83 @@ main {
 img {
   width: 100%;
   border-radius: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: $stone-900;
+  margin: 0 40px 0 40px;
+}
+
+.recipe-description {
+  margin: 25px 40px;
+}
+
+.preparation-time-container {
+  background-color: $rose-50;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 14px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: $rose-800;
+  margin-bottom: 20px;
+}
+
+.preparation-time-list {
+  margin: 20px 20px 0 36px;
+  list-style: none;
+
+  li {
+    padding: 5px;
+    position: relative;
+
+    &:before {
+      content: "•";
+      position: absolute;
+      left: -30px;
+      top: 3px;
+      color: $rose-800;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+h2 {
+  margin: 30px;
+  font-size: 2rem;
+  color: $brown-800;
+}
+
+.ingredients-list {
+  list-style: none;
+  margin: 20px 40px 30px 70px;
+
+  li {
+    padding: 5px;
+    position: relative;
+
+    &:before {
+      content: "•";
+      position: absolute;
+      left: -30px;
+      top: 3px;
+      color: $brown-800;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+hr {
+  width: 92%;
+  margin: 0 auto;
+  border: none;
+  height: 1px;
+  background-color: $stone-150;
 }
