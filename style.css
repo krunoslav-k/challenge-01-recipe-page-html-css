@@ -121,4 +121,27 @@ hr {
   border: none;
   height: 1px;
   background-color: hsl(30, 18%, 87%);
+}
+
+.instructions-list {
+  margin: 30px 55px;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: broj;
+}
+.instructions-list li {
+  line-height: 1.5rem;
+  counter-increment: broj;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+.instructions-list li::before {
+  content: counter(broj) ".";
+  position: absolute;
+  left: -12px;
+  top: 0;
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

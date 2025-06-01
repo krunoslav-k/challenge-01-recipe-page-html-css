@@ -106,3 +106,28 @@ hr {
   height: 1px;
   background-color: $stone-150;
 }
+
+.instructions-list {
+  margin: 30px 55px;
+  padding-left: 0;
+  list-style: none; // sakrij originalne brojeve
+  counter-reset: broj;
+
+  li {
+    line-height: 1.5rem;
+    counter-increment: broj;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+
+    &::before {
+      content: counter(broj) ".";
+      position: absolute;
+      left: -12px;
+      top: 0;
+      font-weight: 700;
+      color: $brown-800;
+      text-align: right;
+    }
+  }
+}
