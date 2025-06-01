@@ -131,3 +131,35 @@ hr {
     }
   }
 }
+
+.nutrition-description {
+  margin: -10px 30px 20px 30px;
+}
+
+.nutrition-table {
+  width: 92%;
+  margin: 20px auto;
+  border-collapse: collapse;
+
+  td {
+    padding: 10px;
+    text-align: left;
+    border: none;
+  }
+  tr {
+    border-bottom: 1px solid $stone-150;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.nutrition-table-number {
+  font-weight: 700;
+  color: $brown-800;
+}
+
+.attribution {
+  padding: 40px 30px 30px 30px;
+}
